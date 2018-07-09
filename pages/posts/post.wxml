@@ -1,0 +1,24 @@
+<view class='swiper-image'>
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!--整块-->
+<view class='tab' wx:for="{{newsList}}">
+  <view class='tab-title'>
+    <image src='{{item.titleImage}}'></image>
+    <text class='time'>{{item.time}}</text>
+  </view>
+  <image src='{{item.tabImage}}' class='tb-image'></image>
+  <text class='tab-content'>{{item.content}}</text>
+  <view class='share'>
+    <image class='star' src='/images/icon/none-star.png'></image>
+    <text class='star-num'>{{item.starNum}}</text>
+    <image class='message' src='/images/icon/none-star.png'></image>
+    <text class='message-num'>{{item.messageNum}}</text>
+  </view>
+</view>

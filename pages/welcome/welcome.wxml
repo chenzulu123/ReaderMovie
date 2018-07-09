@@ -1,0 +1,8 @@
+<!--pages/welcome/welcome.wxml-->
+<view class='container'>
+  <image src='/images/avatar/4.png' class='user-avatar'></image>
+  <text class='title' class='user-name'>Hello,七月</text>
+  <view class='moto-container'>
+    <text class='moto'>开启小程序之旅</text>
+  </view>
+</view>
